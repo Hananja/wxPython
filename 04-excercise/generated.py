@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ###########################################################################
-## Python code generated with wxFormBuilder (version Nov 15 2019)
+## Python code generated with wxFormBuilder (version Oct 26 2018)
 ## http://www.wxformbuilder.org/
 ##
 ## PLEASE DO *NOT* EDIT THIS FILE!
@@ -41,7 +41,7 @@ class AbstractMainPanel ( wx.Panel ):
 
 		main_sizer.Add( input_sizer, 0, wx.EXPAND, 5 )
 
-		self.main_list = wx.ListBox( self, wx.ID_ANY )
+		self.main_list = wx.ListCtrl( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.LC_ICON )
 		main_sizer.Add( self.main_list, 1, wx.ALL|wx.EXPAND, 5 )
 
 		button_sizer = wx.BoxSizer( wx.HORIZONTAL )
