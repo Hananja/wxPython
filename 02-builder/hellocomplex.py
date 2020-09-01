@@ -10,7 +10,6 @@ class MainPanel(AbstractMainPanel):
     def on_button_hello(self, event):
         print("Hello World.")
 
-
 # Next, create an application object.
 app = wx.App()
 
