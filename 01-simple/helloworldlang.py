@@ -95,8 +95,8 @@ class HelloFrame(wx.Frame):
         """ Show settings dialog """
         choices = list(hello_text.keys())
         dlg = wx.SingleChoiceDialog(self, "Please select language", "Language selection", choices)
-        buttom = dlg.ShowModal()
-        if wx.ID_OK == buttom:
+        button = dlg.ShowModal()
+        if wx.ID_OK == button:
             self.static_text.SetLabelText(hello_text[choices[dlg.GetSelection()]])
 
     def OnExit(self, event):
